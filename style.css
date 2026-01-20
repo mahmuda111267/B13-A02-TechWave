@@ -23,10 +23,20 @@ button {
   border-radius: 30px;
   color: white;
   font-size: 16px;
-  
+  cursor: pointer;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 button:hover {
-  transform: translateY(-3px);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(212, 12, 142, 0.5);
+}
+
+/* click effect */
+button:active {
+  transform: translateY(-1px) scale(0.96);
+  box-shadow: 0 6px 14px rgba(212, 12, 142, 0.4);
 }
 
 header {
@@ -106,6 +116,21 @@ nav input {
   width: 150px;
   height: 200px;
 }
+
+.rotate{
+  width: 150px;
+  height: 200px;
+  animation: spin 4s linear forwards;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .new p {
   position: absolute;
   top: 10px;
