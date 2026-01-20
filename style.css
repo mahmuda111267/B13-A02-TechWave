@@ -215,6 +215,65 @@ nav input {
   text-transform: uppercase;
 }
 
+/* About Section */
+.why-techwave {
+  background: #2d0f42;
+  width: 100%;
+  min-height: 850px;
+}
+.techwave {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.techwave h1 {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  color: white;
+  font-size: 50px;
+}
+
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 10px;
+}
+.card img {
+  width: 35px;
+  height: 35px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #421d5c;
+  padding: 20px;
+  border-radius: 25px;
+  gap: 10px;
+}
+.card h2 {
+  font-size: 24px;
+  color: white;
+}
+.card p {
+  font-size: 15px;
+  color: white;
+  opacity: 80%;
+  line-height: 20px;
+}
+.card-1 {
+  padding: 50px 20px;
+}
+
+.tall {
+  grid-row: span 2;
+}
+
+.wide {
+  grid-column: span 2;
+}
+
 @media screen and (max-width: 576px) {
   /* Responsive Navbar */
   .hamburger {
@@ -280,5 +339,15 @@ nav input {
   .about-card {
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+  }
+
+  /* Responsive Why-techwave*/
+  .grid-section {
+    grid-template-columns: 1fr;
+  }
+  .tall,
+  .wide {
+    grid-row: auto;
+    grid-column: auto;
   }
 }
