@@ -350,6 +350,64 @@ nav input {
   color: #00ff88;
 }
 
+/*Host Section*/
+.host-section {
+  padding-bottom: 100px;
+}
+.host-section h1 {
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 50px;
+  color: white;
+  font-size: 50px;
+}
+
+.host {
+  max-width: 1250px;
+  margin: 0 auto;
+  display: flex;
+  background-color: #421d5c;
+  border-radius: 25px;
+  gap: 20px;
+  padding: 35px;
+}
+.host img {
+  width: 190px;
+  height: 190px;
+}
+
+.host-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.host-content h2 {
+  font-size: 32px;
+  color: white;
+}
+.host-content p {
+  font-size: 16px;
+  color: white;
+  opacity: 80%;
+}
+.socials {
+  display: flex;
+  gap: 16px;
+}
+.radius {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid gray;
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+}
+.radius img {
+  width: 20px;
+  height: 20px;
+}
+
 @media screen and (max-width: 576px) {
   /* Responsive Navbar */
   .hamburger {
@@ -429,10 +487,20 @@ nav input {
 
   /* Responsive Feature Episodes*/
   .main-episodes {
-  grid-template-columns: repeat(1, 1fr);
-}
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* Responsive Host */
+  .host{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .host-content{
+    justify-content: center;
+    align-items: center;
 
-
-
-
+  }
+  .host-section{
+    padding: 15px;
+  }
 }
