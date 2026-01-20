@@ -215,7 +215,7 @@ nav input {
   text-transform: uppercase;
 }
 
-/* About Section */
+/* why-techwav Section */
 .why-techwave {
   background: #2d0f42;
   width: 100%;
@@ -272,6 +272,82 @@ nav input {
 
 .wide {
   grid-column: span 2;
+}
+
+/* Featured Episodes Section */
+.Featured-Episodes {
+  background: #220a33;
+  width: 100%;
+  min-height: 850px;
+}
+.Episodes {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.Episodes h1 {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  color: white;
+  font-size: 50px;
+}
+
+.main-episodes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding: 10px;
+}
+
+.episodes-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #421d5c;
+  border-radius: 20px;
+}
+
+.video {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  overflow: hidden;
+}
+
+.video iframe {
+  width: 100%;
+  height: 200px;
+  border: none;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 20px;
+}
+
+.card-content h2 {
+  font-size: 24px;
+  color: white;
+  font-weight: 600;
+}
+
+.card-content p {
+  color: white;
+  opacity: 80%;
+  font-size: 16px;
+}
+.time {
+  display: flex;
+  gap: 10px;
+}
+.time img {
+  width: 20px;
+  height: 20px;
+}
+
+.time p {
+  color: #00ff88;
 }
 
 @media screen and (max-width: 576px) {
@@ -350,4 +426,13 @@ nav input {
     grid-row: auto;
     grid-column: auto;
   }
+
+  /* Responsive Feature Episodes*/
+  .main-episodes {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+
+
+
 }
