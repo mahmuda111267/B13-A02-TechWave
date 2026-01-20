@@ -23,6 +23,7 @@ button {
   border-radius: 30px;
   color: white;
   font-size: 16px;
+  
 }
 button:hover {
   transform: translateY(-3px);
@@ -408,6 +409,58 @@ nav input {
   height: 20px;
 }
 
+/*Footer Section*/
+footer {
+  width: 100%;
+  min-height: 300px;
+  background: url("./Images/footer-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: white;
+  padding-bottom: 20px;
+}
+footer span {
+  background: linear-gradient(10deg, #ffe601, #d40c8e, #5d0887);
+  background-clip: text;
+  color: transparent;
+}
+
+.media {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: center;
+  gap: 25px;
+  padding-bottom: 20px;
+}
+
+.media img {
+  width: 15px;
+  height: 15px;
+}
+
+.common-media {
+  display: flex;
+  gap: 5px;
+}
+.common-media a {
+  text-decoration: none;
+  color: white;
+}
+
+.copy {
+  color: white;
+  padding-top: 35px;
+}
+
 @media screen and (max-width: 576px) {
   /* Responsive Navbar */
   .hamburger {
@@ -490,17 +543,22 @@ nav input {
     grid-template-columns: repeat(1, 1fr);
   }
   /* Responsive Host */
-  .host{
+  .host {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .host-content{
+  .host-content {
     justify-content: center;
     align-items: center;
-
   }
-  .host-section{
+  .host-section {
     padding: 15px;
+  }
+
+  /*Footer*/
+  .media {
+    grid-template-columns: repeat(2, auto);
+    place-items: center;
   }
 }
