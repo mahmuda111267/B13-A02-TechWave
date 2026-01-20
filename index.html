@@ -1,12 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Home</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    
-</body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <!--Navbar Section-->
+      <nav>
+        <h2>Tech<span>Wave</span></h2>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="hamburger"
+          ><img src="./Images/hamburger-menu.png" alt="menu-bar"
+        /></label>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Episodes</a></li>
+          <li><a href="#">Host</a></li>
+        </ul>
+        <button>Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+      </nav>
+
+      <!--Banner Section-->
+      <div class="banner">
+        <div class="banner-content">
+          <div class="main-circle-micro">
+            <div class="circle-micro">
+              <img src="./Images/hero-circle.png" class="circle" />
+              <img src="./Images/microphone.png" class="micro" />
+             <div class="new">
+               <p style="color: black;">NEW</p>
+             </div>
+            </div>
+          </div>
+          <h1>TechWave</h1>
+          <p>
+            Your daily dose of tech insights, productivity hacks, and personal
+            growth
+          </p>
+          <div class="banner-button">
+            <div class="img-btn-1 img-btn">
+              <button>
+                <img src="./Images/spotify.png" /> Listen on Spotify
+              </button>
+            </div>
+            <div class="img-btn-2 img-btn">
+              <button><img src="./Images/message.png" /> Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>

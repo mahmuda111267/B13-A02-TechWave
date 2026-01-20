@@ -1,0 +1,202 @@
+/* common section */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  width: 135px;
+  height: 40px;
+  background: linear-gradient(60deg, #ffe601, #d40c8e, #5d0887);
+  color: transparent;
+  object-fit: cover;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 16px;
+}
+button:hover {
+  transform: translateY(-3px);
+}
+
+header {
+  background: #220a33;
+}
+/* navbar section */
+nav {
+  max-width: 1250px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+nav h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: white;
+}
+nav span {
+  background: linear-gradient(10deg, #ffe601, #d40c8e, #5d0887);
+  background-clip: text;
+  color: transparent;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+nav input {
+  display: none;
+}
+
+.hamburger {
+  color: white;
+  display: none;
+}
+
+/* Banner Section */
+.banner {
+  width: 100%;
+  min-height: 850px;
+  background: url("./Images/hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.circle-micro {
+  position: relative;
+  width: 400px;
+}
+
+.circle {
+  width: 100%;
+  position: relative;
+}
+.micro {
+  position: absolute;
+  top: 90px;
+  left: 125px;
+  width: 150px;
+  height: 200px;
+}
+.new p {
+  position: absolute;
+  top: 10px;
+  right: 80px;
+  height: 25px;
+  width: 50px;
+  background-color: #00ff88;
+  border-radius: 20px;
+  text-align: center;
+  padding: 2px 0px;
+}
+
+.banner-content h1 {
+  color: white;
+  font-size: 60px;
+}
+
+.banner-content p {
+  font-size: 16px;
+  color: white;
+}
+.banner-button {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.img-btn-1 img {
+  height: 15px;
+  width: 15px;
+}
+
+.img-btn-1 button {
+  width: 180px;
+  padding: 5px;
+}
+
+.img-btn-2 img {
+  height: 12px;
+  width: 15px;
+}
+
+.img-btn-2 button {
+  background: inherit;
+  border: 2px solid #00ff88;
+  color: #00ff88;
+}
+
+@media screen and (max-width: 576px) {
+  /* Responsive Navbar */
+  .hamburger {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: -200px;
+    right: 0px;
+    background-color: rgb(220, 173, 241);
+    padding: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  nav button {
+    display: none;
+  }
+
+  input[type="checkbox"]:checked ~ ul {
+    top: 70px;
+  }
+
+  /* Responsive Banner */
+  .circle-micro {
+    width: 300px;
+  }
+  .micro {
+    top: 65px;
+    left: 90px;
+    width: 100px;
+    height: 130px;
+  }
+  .new p {
+    top: 10px;
+    right: 50px;
+  }
+  .banner-content h1 {
+    font-size: 48px;
+  }
+  .banner-content p {
+    font-size: 15px;
+    text-align: center;
+  }
+}
